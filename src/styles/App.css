@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --cinza-body:#D2DBDC;
+  --cinza-window: #EDEDED;
+  --white-busca:#F6F6F6;
+  --white-hover:#F5F5F5;
+  --white-chatintro:#F8F9FA;
+  --cinza-claro: #9999;
+  --active-chat:#EBEBEB;
+  --window-chat:#E5DDD5;
+  --chat-h1: #525252;
+  --chat-h2: #777;
+  --white: #FFF;
+  --black: #000;
+  --new-verde:#00BFA5;
+  
+}
+body {
+  background-color: var(--cinza-body);
+  margin: 0;
+  font-family: "Segoe UI", Helvetica Neue, Helvetica, Lucida Grande, Arial;
+}
+
+.app-window {
+  display: flex;
+  height: 100vh;
+  background-color: var(--cinza-window);
+}
+.sidebar {
+  width: 35%;
+  max-width: 415px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+}
+header{
+  height: 60px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 0 15px;
+}
+.header--avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor:pointer;
+}
+.header--buttons{
+  display:flex;
+}
+.header--btn{
+  width:40px;
+  height: 40px;
+  border-radius:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.busca{
+  background-color: var(--white-busca);
+  border-bottom: 1px solid #EEE;
+  padding: 5px 15px;
+}
+.busca--input{
+  background-color: var(--white);
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items:center;
+  padding: 0 10px;
+  
+}
+.busca--input input{
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  margin-left: 10px;
+
+}
+.chatlist{
+  flex: 1;
+  background: var(--white);
+  overflow-y: auto;
+}
+.chatlist::-webkit-scrollbar{
+  width: 6px;
+  height: 6px;
+}
+.chatlist::-webkit-scrollbar-thumb{
+  background-color: rgba(0,0,0, 0.2);
+}
+.contentarea {
+  flex: 1;
+}
